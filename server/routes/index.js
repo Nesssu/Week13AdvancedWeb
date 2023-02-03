@@ -3,7 +3,7 @@ const router = express.Router();
 const Books = require('../models/Books');
 
 /* GET home page. */
-router.get('/api/book', (req, res, next) =>
+router.post('/api/book', (req, res, next) =>
 {
   const newBook =
   {
