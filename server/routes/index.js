@@ -12,8 +12,6 @@ router.post('/api/book', (req, res, next) =>
     "pages": req.body.pages
   };
 
-  console.log(newBook);
-
   // Add to the database
   Books.create(
     {

@@ -29,8 +29,6 @@ function App() {
       pages
     };
 
-    console.log(newBook);
-
     fetch('/api/book', {
       method: "POST",
       headers: {
