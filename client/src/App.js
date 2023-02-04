@@ -41,13 +41,13 @@ function App() {
   return (
     <div className="App">
       <h1>Books</h1>
-      <input type="text" value={name} onChange={handleNameChange} />
+      <input id="name" type="text" value={name} onChange={handleNameChange} />
       <br/>
       <br/>
-      <input type="text" value={author} onChange={handleAuthorChange} />
+      <input id="author" type="text" value={author} onChange={handleAuthorChange} />
       <br/>
       <br/>
-      <input type="number" value={pages} onChange={handlePagesChange} />
+      <input id="pages" type="number" value={pages} onChange={handlePagesChange} />
       <br/>
       <br/>
       <input id="submit" type="submit" value="Submit" onClick={handleSubmit}/>
