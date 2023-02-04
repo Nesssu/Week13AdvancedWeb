@@ -19,9 +19,9 @@ const Books = () =>
         <div className="App">
             <h1>Books</h1>
             <br/>
-            <h4>{book.name}</h4>
-            <h4>{book.author}</h4>
-            <h4>{book.pages}</h4>
+            <h4 id="name">{book.name}</h4>
+            <h4 id="author">{book.author}</h4>
+            <h4 id="pages">{book.pages}</h4>
         </div>
     )
 } 
