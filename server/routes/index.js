@@ -27,4 +27,13 @@ router.post('/api/book', (req, res, next) =>
   );
 });
 
+router.get('/api/book/:name', (req, res) =>
+{
+  Books.findOne({name: req.params.name}, (err, data) =>
+  {
+    if (err) throw err;
+    if (data) return res.json(data);
+  })
+})
+
 module.exports = router;
